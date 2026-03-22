@@ -21,21 +21,14 @@ public class atmSystem {
         }
 
         while (flag) {
-<<<<<<< HEAD
             System.out.println("\n*************************************************");
             System.out.println("Enter choice:");
-=======
-            System.out.println();
-            System.out.println("**************************************************");
-            System.out.println("Enter choice: ");
-            System.out.println("What do you want to do?");
->>>>>>> bf40d6230018bca9938de45d2b2b4e5f4a5517a8
             System.out.println("1: Check Balance\n2: Deposit\n3: Withdraw\n4: Exit");
 
             
             if (!sc.hasNextInt()) {
                 System.out.println("Invalid choice! Enter number only.");
-                sc.nextLine(); // clear buffer
+                sc.nextLine(); 
                 continue;
             }
 
@@ -52,7 +45,7 @@ public class atmSystem {
 
                     if (!sc.hasNextFloat()) {
                         System.out.println("Invalid amount!");
-                        sc.nextLine(); // clear buffer
+                        sc.nextLine(); 
                         break;
                     }
 
@@ -72,7 +65,7 @@ public class atmSystem {
 
                     if (!sc.hasNextFloat()) {
                         System.out.println("Invalid amount!");
-                        sc.nextLine(); // clear buffer
+                        sc.nextLine(); 
                         break;
                     }
 
