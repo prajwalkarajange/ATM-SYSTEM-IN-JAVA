@@ -10,6 +10,7 @@ public class atmSystem {
         System.out.println("Enter PIN: ");
         if (!sc.hasNextInt()) {
             System.out.println("Invalid PIN format!");
+            sc.close();
             return;
         }
 
@@ -17,6 +18,7 @@ public class atmSystem {
 
         if (id != 1234) {
             System.out.println("Incorrect PIN. Exiting...");
+            sc.close();
             return;
         }
 
